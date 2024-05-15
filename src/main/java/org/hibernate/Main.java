@@ -29,13 +29,13 @@ public class Main {
 
         for (Product product : listedProducts) {
             if (product instanceof Chair) {
-                System.out.println("Printing a chair: " + product);
+                System.out.println("Printing a " + product.getClass().getSimpleName() + " " + product);
             } else if (product instanceof Desk) {
-                System.out.println("Printing a desk: " + product);
+                System.out.println("Printing a " + product.getClass().getSimpleName() + " " + product);
             } else if (product instanceof Notebook) {
-                System.out.println("Printing a notebook: " + product);
+                System.out.println("Printing a " + product.getClass().getSimpleName() + " " + product);
             } else {
-                System.out.println("Printing a printer: " + product);
+                System.out.println("Printing a " + product.getClass().getSimpleName() + " " + product);
             }
         }
 
@@ -51,21 +51,21 @@ public class Main {
 
         for (Product product : listedProducts) {
             if (product instanceof Chair) {
-                System.out.println("Chair price before increment: " + product.getPrice());
+                System.out.println(product.getClass().getSimpleName() + " price before increment: " + product.getPrice());
                 product.incrementPrice(0.05);
-                System.out.println("Chair price after increment: " + product.getPrice());
+                System.out.println(product.getClass().getSimpleName() + " price after increment: " + product.getPrice());
             } else if (product instanceof Desk) {
-                System.out.println("Desk price before increment: " + product.getPrice());
+                System.out.println(product.getClass().getSimpleName() + " price before increment: " + product.getPrice());
                 product.incrementPrice(0.10);
-                System.out.println("Desk price after increment: " + product.getPrice());
+                System.out.println(product.getClass().getSimpleName() + " price after increment: " + product.getPrice());
             } else if (product instanceof Notebook) {
-                System.out.println("Notebook price before increment: " + product.getPrice());
+                System.out.println(product.getClass().getSimpleName() + " price before increment: " + product.getPrice());
                 product.incrementPrice(0.20);
-                System.out.println("Notebook price after increment: " + product.getPrice());
+                System.out.println(product.getClass().getSimpleName() + " price after increment: " + product.getPrice());
             } else {
-                System.out.println("Printer price before increment: " + product.getPrice());
+                System.out.println(product.getClass().getSimpleName() + " price before increment: " + product.getPrice());
                 product.incrementPrice(0.15);
-                System.out.println("Printer price after increment: " + product.getPrice());
+                System.out.println(product.getClass().getSimpleName() + " price after increment: " + product.getPrice());
             }
         }
 
